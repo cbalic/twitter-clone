@@ -1,12 +1,12 @@
 import React from 'react';
-import Navabr from './Navbar';
+import Navbar from './Navbar';
 import '../styles/style.css'
 
 const App = () => {
     return (
-        <nav>
-            <Navabr />
-        </nav>
+        <div>
+            <Navbar />
+        </div>
     )
 };
 

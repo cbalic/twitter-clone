@@ -3,19 +3,170 @@
   margin: 0;
   padding: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body {
   font-size: 10px;
+  background: #E5E5E5;
+  font-family: 'Poppins', sans-serif;
+
 }
+
+/* ------------NAVBAR --------------*/
 
 nav {
   width: 100%;
-  background: grey;
-  padding: 1.6rem;
+  background: #F6F5F5;
+  padding: 1rem 2rem;
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
 }
 
-nav input {
+.logo {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav__links {
+  margin-right: auto;
+
+}
+
+
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease;
+}
+
+.nav__links li a:hover {
+  color: blue;
+  border-bottom: 0.5px solid grey;
+}
+
+.nav__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 30%; */
+}
+
+.nav__profile img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 1rem;
+  order: 2;
+}
+
+.nav__profile input {
   border: none;
-  padding: 0.4rem;
+  padding: 0.8rem;
   border-radius: 8px;
+  width: 60%;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+  order: 1
+}
+
+.nav__profile button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: #63B2EF;
+  border-radius: 3rem;
+  color: white;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+  order: 3;
+
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu div {
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .toggle__nav {
+    /* display: none; */
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .logo {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  } 
+
+  .nav__links {
+    margin: 0;
+    width: 100%;
+    order: 3;
+}
+  .nav__links li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-bottom: 0.6px solid grey;
+    padding: 1.5rem 0;
+  }
+
+  .nav__links li a {
+    padding: 10px 0;
+  }
+
+  .nav__profile  {
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 1.5rem 0; */
+    order: 2;
+    width: 100%;
+  }
+
+  .nav__profile {
+    width: 100%;
+  }
+
+  .nav__profile button {
+    order: 2;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .nav__profile input {
+    order: 3;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .nav__profile img {
+    order: 1;
+    width: 100px;
+    margin: 1rem 0;
+  }
 }
