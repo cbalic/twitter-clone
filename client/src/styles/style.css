@@ -30,6 +30,11 @@ nav {
   margin-right: auto;
 }
 
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
 .nav__links {
   margin-right: auto;
 
