@@ -1,5 +1,6 @@
 .main-feed {
     background: white;
     border: 1px solid tomato;
-    grid-row: 1 / 10;
+    grid-row: 2 / 10;
+    /* grid-column:  /; */
 }

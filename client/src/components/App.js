@@ -20,13 +20,12 @@ const App = () => {
     return (
         <div>
             <Navbar />
-
             <div className="grid-wrapper">
                 <Profile />
-                <MainFeed /> 
+                <MainFeed />
+                <Tweet />
                 <Sidebar />
                 <Users />
-                
             </div>
         </div>
     )

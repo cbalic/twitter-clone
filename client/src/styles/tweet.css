@@ -1,4 +1,36 @@
 .tweet {
-    background: grey;
+    background: #ECF3F7;
     border: 1px solid green;
+    grid-column: 2/2;
+    grid-row: 1 / 2;
+    
+
+}
+
+.tweet-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    /* border: 1px solid black;  */
+
+}
+
+.tweet h2 {
+    font-size: 1.4rem;
+    padding: 10px 0;
+}
+
+.profile__image {
+    border-radius: 50%;
+    margin-right: auto;
+}
+
+.tweet input {
+    padding: 1rem;
+    width: 85%;
+    background: rgb(245, 240, 240);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: none;
 }

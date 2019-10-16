@@ -18,6 +18,7 @@ body {
   
   /* set column widths  */
   grid-template-columns: 1fr 2fr 1fr;  
+  /* grid-template-rows: auto; */
   border: 1px dashed red; 
 
   /* Gap between each item in the grid */
