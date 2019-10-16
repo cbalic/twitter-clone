@@ -1,4 +1,5 @@
 .users-feed {
   background: white;
   border: 1px solid blue;
+  grid-row: 1 /10;
 }

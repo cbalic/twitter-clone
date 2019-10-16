@@ -17,11 +17,11 @@ body {
   margin: 2.5rem;
   
   /* set column widths  */
-  grid-template-columns: 25% 50% 25%;  
+  grid-template-columns: 1fr 2fr 1fr;  
   border: 1px dashed red; 
 
   /* Gap between each item in the grid */
-  grid-gap: 10px;
+  grid-gap: 25px;
   height: 100vh;
 
 }
