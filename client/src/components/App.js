@@ -1,22 +1,27 @@
 import React from 'react';
 import Navbar from './Navbar';
-import '../styles/style.css'
 
-import './App.css'
+import './App.css';
+import '../styles/style.css';
+import '../styles/main.css';
+import '../styles/usersFeed.css';
+
 import Sidebar from './Sidebar';
+import Users from './UsersFeed.js';
+import MainFeed from './MainFeed';
 
 const App = () => {
     return (
         <div>
-<<<<<<< HEAD
-            <Sidebar />
-        </div>
-    );
-=======
             <Navbar />
+
+            <div className="grid-wrapper">
+                <Sidebar /> 
+                <Users />
+                <MainFeed />
+            </div>
         </div>
     )
->>>>>>> a50ab8a10b8d204e1d45bd14b69000521584aecf
 };
 
 export default App;

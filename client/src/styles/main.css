@@ -1,0 +1,32 @@
+*, *:before,*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  font-size: 10px;
+  background: #E5E5E5;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.grid-wrapper {
+  display: grid; 
+  margin: 2.5rem;
+  
+  /* set column widths  */
+  grid-template-columns: 20% 60% 20%;  
+  border: 1px dashed red; 
+
+  /* Gap between each item in the grid */
+  grid-gap: 10px;
+  height: 80vh;
+
+  
+
+
+}
+
+
