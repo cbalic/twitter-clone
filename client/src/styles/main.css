@@ -17,15 +17,12 @@ body {
   margin: 2.5rem;
   
   /* set column widths  */
-  grid-template-columns: 20% 60% 20%;  
+  grid-template-columns: 25% 50% 25%;  
   border: 1px dashed red; 
 
   /* Gap between each item in the grid */
   grid-gap: 10px;
-  height: 80vh;
-
-  
-
+  height: 100vh;
 
 }
 
