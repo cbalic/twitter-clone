@@ -2,5 +2,47 @@
 .profile {
   background: white;
   border: 1px solid blue;
-  grid-row: 1 / 4;
+  grid-row: 1 / 5;
+  display: grid;
+  grid-template-columns: 1fr;
 }
+
+.profile__background {
+  width: 100%;
+  height: 50%;
+}
+
+.profile-box {
+  position: relative;
+  /* border: 1px solid red; */
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Tweets, following, followers */
+.profile-box ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+
+}
+
+
+.profile-box ul li {
+  list-style: none;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.profile-box img {
+  top: -110px;
+  left: 15px;
+  position: absolute;
+  border: 2px solid white;
+}
+
+
+
+

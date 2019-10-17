@@ -24,7 +24,12 @@ body {
   /* Gap between each item in the grid */
   grid-gap: 25px;
   height: 100vh;
+}
 
+@media  (min-width: 740px) {
+  .grid-wrapper {
+    /* grid-template-columns: 1fr; */
+  }
 }
 
 
