@@ -21,14 +21,30 @@ body {
   /* grid-template-rows: auto; */
   border: 1px dashed red; 
 
+  grid-template-areas: 
+  "profile tweet users" 
+  "profile main-feed users"
+  "sidebar main-feed users"
+  "sidebar main-feed users";
+
   /* Gap between each item in the grid */
   grid-gap: 25px;
   height: 100vh;
 }
 
-@media  (min-width: 740px) {
+@media screen and (max-width: 600px) {
   .grid-wrapper {
-    /* grid-template-columns: 1fr; */
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "profile"
+    "profile"
+    "tweet"
+    "main-feed"
+    "sidebar"
+    "users";
   }
 }
 

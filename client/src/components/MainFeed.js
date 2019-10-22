@@ -6,6 +6,49 @@ const MainFeed = () => {
     return (
         <div className="main-feed">
             MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
+            MainFeed
+            <br/>
         </div>
     );
 }

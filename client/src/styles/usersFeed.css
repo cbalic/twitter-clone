@@ -1,5 +1,14 @@
 .users-feed {
   background: white;
   border: 1px solid blue;
-  grid-row: 1 /10;
+  /* grid-row: 1 /10; */
+  grid-area: users;
 }
+
+
+/* @media screen and (max-width: 600px) {
+  .users-feed {
+      grid-column: 1/1;
+      grid-row:  auto;
+  }
+} */

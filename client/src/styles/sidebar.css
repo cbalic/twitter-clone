@@ -1,5 +1,14 @@
 .sidebar {
   background: white;
-  grid-column: 1 / 1;
-  grid-row:  5 / 10;
+  /* grid-column: 1 / 1; */
+  /* grid-row:  5 / 10; */
+  grid-area: sidebar;
 }
+
+
+/* @media screen and (max-width: 600px) {
+  .sidebar {
+      grid-column: 1/1;
+      grid-row: 10 / auto;
+  }
+} */
