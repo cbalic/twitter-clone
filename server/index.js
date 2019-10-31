@@ -1,10 +1,13 @@
+require('dotenv').config({ path:''});
+
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-mongoose.connect('mongodb://localhost/twitter-clone-db', {useNewUrlParser: true} )
-    .then(console.log('Connected to MongoDB'))
-    .catch(err => console.error('Unable to connect to MongoDB', err));
+
+mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true})
+    db.on('error', (error) => console.error(error));
+    db.once('open', () => console.log('connected to database'));
 
 app.use(express.json());
 
