@@ -4,10 +4,3 @@
     grid-row: 2 / 10;
     grid-area: main-feed;
 }
-
-/* @media (max-width: 600px) {
-    .main-feed {
-      grid-column: 1/1;
-      grid-row: 9/ auto;
-    }
-  } */
