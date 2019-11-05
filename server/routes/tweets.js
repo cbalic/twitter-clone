@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Tweet } = require('../models/tweet');
+const { Tweet } = require('../models/TweetSchema');
 
 // CRUD methods for retrieving info from mongoDB
 
