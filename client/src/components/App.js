@@ -16,19 +16,40 @@ import MainFeed from './MainFeed';
 import Profile from './Profile';
 import Tweet from './Tweet';
 
-const App = () => {
-    return (
-        <div>
-            <Navbar />
-            <div className="grid-wrapper">
-                <Profile />
-                <MainFeed />
-                <Tweet />
-                <Sidebar />
-                <Users />
+class App extends React.Component {
+    state = { data: null };
+
+    componentDidMount() {
+        this.callServerAPI()
+            .then(res => this.setState({ data: res.express }))
+            .catch(err => console.log(err));
+    };
+
+    callServerAPI = async () => {
+        const response = await fetch('/express_backend');
+        const body = await response.json();
+
+        if (response.status !== 200) {
+            throw Error(body.message);
+        }
+        return body;
+    };
+
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <div className="grid-wrapper">
+                    <Profile />
+                    <MainFeed />
+                    <Tweet />
+                    <Sidebar />
+                    <Users />
+                    <p className="fetched-data">{this.state.data}</p>
+                </div>
             </div>
-        </div>
-    )
+        );
+    };
 };
 
 export default App;
